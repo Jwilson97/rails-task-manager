@@ -1,1 +1,9 @@
 @import "bootstrap/scss/bootstrap";
+
+.list-group-item {
+  border: none !important;
+}
+
+.list-style {
+  list-style: none;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><%= @task.title %></h1>
+
+  <p><%= @task.details %></p>
+
+  <p><%= link_to "Delete", task_path(@task), method: :delete, data: { confirm: "Are you sure?" } %></p>
+  <p><%= link_to "Edit", task_edit_path(@task) %></p>
+  <p><%= link_to "View All", tasks_path(@tasks)%></p>
+</div>

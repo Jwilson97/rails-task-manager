@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Lets make a task!</h1>
+
+  <%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.submit class: 'btn btn-primary'%>
+<% end %>
+<br>
+<p><%= link_to "View All", tasks_path(@tasks)%></p>
+</div>
