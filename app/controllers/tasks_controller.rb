@@ -5,7 +5,8 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
 
-  def show; end
+  def show
+  end
 
   def new
     @task = Task.new
