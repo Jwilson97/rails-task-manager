@@ -10,7 +10,7 @@
     <li class="list-style">
       <% if task.completed %>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
             <%= link_to task.title, task_path(task) %>
           </label>
@@ -27,5 +27,5 @@
     <% end %>
   </ul>
 
-  <p><%= link_to "New Task", tasks_new_path %></p>
+  <p><%= link_to "New Task", tasks_new_path, class: 'btn btn-success' %></p>
 </div>
